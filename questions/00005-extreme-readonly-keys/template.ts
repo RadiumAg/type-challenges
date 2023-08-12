@@ -6,6 +6,3 @@ declare global {
  }[keyof T]
 }
 
-type c = Equal<{ a?: string }, { a?: string }>
-type d = { [key in keyof { a?: string }]: key }
-
