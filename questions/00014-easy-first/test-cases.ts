@@ -7,6 +7,8 @@ type cases = [
   Expect<Equal<First<[undefined]>, undefined>>,
 ]
 
+type a = First<[() => 123, { a: string }]>
+
 type errors = [
   // @ts-expect-error
   First<'notArray'>,
