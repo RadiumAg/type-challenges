@@ -1,1 +1,1 @@
-type Length<T> = any
+type Length<T> = T extends { length: infer R } ? R : never
