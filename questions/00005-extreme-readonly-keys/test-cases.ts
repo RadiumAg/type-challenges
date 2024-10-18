@@ -5,11 +5,14 @@ type cases = [
   Expect<Equal<'title' | 'description', GetReadonlyKeys<Todo2>>>,
 ]
 
+type c = GetReadonlyKeys<Todo1>
 interface Todo1 {
   readonly title: string
   description: string
   completed: boolean
 }
+
+type b = keyof Todo1
 
 interface Todo2 {
   readonly title: string
